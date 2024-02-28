@@ -1,0 +1,21 @@
+# n=int(input())
+# for i in range(n,0,-5):
+#     print(i,end=" ")
+# for i in range(0,n+1,5):
+#     print(i,end=" ")
+
+def print_pattern(n, N):
+    if n <= 0:
+        print(n, end=' ')
+        return
+    print(n, end=' ')
+    print_pattern(n - 5, N)
+    # if n != N:
+    print(n, end=' ')
+
+# Taking input
+N = int(input())
+
+# Printing pattern
+print_pattern(N, N)
+# print(N,end=" ")
